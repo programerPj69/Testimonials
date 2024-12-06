@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(0,212,255,1) 57%, rgba(121,9,9,1) 96%);
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    color: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(0,212,255,1) 57%, rgba(121,9,9,1) 96%);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: auto;
+    max-width: 1200px;
+    
+}
+ 
+.card {
+    width: 190px;
+    height: 350px;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box;
+    border: 2px solid transparent;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transform-origin: right bottom;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card .main-content {
+    flex: 1;
+  }
+  
+  .card .header span:first-child {
+    font-weight: 600;
+    color: #717171;
+    margin-right: 4px;
+  }
+  
+  .card .heading {
+    font-size: 24px;
+    margin: 24px 0 16px;
+    font-weight: 600;
+  }
+  
+  .card .categories {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .card .categories span {
+    background-color: #e81cff;
+    padding: 4px 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    border-radius: 50em;
+  }
+  
+  .card .footer {
+    font-weight: 600;
+    color: #717171;
+    margin-right: 4px;
+  }
+  
+  .card:hover {
+    rotate: 8deg;
+  }
